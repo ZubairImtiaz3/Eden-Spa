@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/dist/client/link";
 import Image from "next/image";
 import logo from "../imgs/logo.png";
 
@@ -12,29 +13,37 @@ function Footer() {
 
             <ul className="flex sm:space-x-12 xl:space-x-[3.813rem] flex-col space-y-6 sm:space-y-0 sm:flex-row items-center">
               <li>
-                <a className="font-Poppins text-white text-base">
+                <Link href="/" className="font-Poppins text-white text-base">
                   In-Home Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="font-Poppins text-white text-base">Store</a>
+                <Link href="/" className="font-Poppins text-white text-base">
+                  Store
+                </Link>
               </li>
               <li>
-                <a className="font-Poppins text-white text-base">Blog</a>
+                <Link href="/" className="font-Poppins text-white text-base">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a className="font-Poppins text-white text-base">
+                <Link href="/" className="font-Poppins text-white text-base">
                   Trust & Safety
-                </a>
+                </Link>
               </li>
             </ul>
 
             <ul className="flex sm:space-x-12 xl:space-x-[3.813rem] flex-col space-y-6 sm:space-y-0 sm:flex-row items-center">
               <li>
-                <a className="font-Poppins text-white text-base">Contact Us</a>
+                <Link href="/" className="font-Poppins text-white text-base">
+                  Contact Us
+                </Link>
               </li>
               <li>
-                <a className="font-Poppins text-white text-base">Follow Us</a>
+                <Link href="/" className="font-Poppins text-white text-base">
+                  Follow Us
+                </Link>
               </li>
             </ul>
           </div>
