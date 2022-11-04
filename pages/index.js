@@ -15,6 +15,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+//Accordian
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+
 // Images
 import fblogo from "../imgs/facebook.png";
 import twitterlogo from "../imgs/twitter.png";
@@ -28,6 +33,15 @@ import massage2 from "../imgs/massage2.png";
 import bookmassage1 from "../imgs/swedish.png";
 import bookmassage2 from "../imgs/deeptissue.png";
 import bookmassage3 from "../imgs/parental.png";
+import whyusvector from "../imgs/whyusvector.png";
+import whyusicon1 from "../imgs/whyusicon1.png";
+import whyusicon2 from "../imgs/whyusicon2.png";
+import whyusicon3 from "../imgs/whyusicon3.png";
+import provider1 from "../imgs/provider1.png";
+import provider2 from "../imgs/provider2.png";
+import provider3 from "../imgs/provider3.png";
+import jobvector from "../imgs/job.png";
+
 export default function Home() {
   return (
     <>
@@ -84,7 +98,7 @@ export default function Home() {
       <h2 className="font-Domine font-medium text-[2.5rem] lg:text-[4rem] mt-[6rem] max-w-[85.83%] mx-auto">
         How it works
       </h2>
-      <div className="containerCard mt-12 flex max-w-[85.83%] mx-auto justify-between align-baseline flex-wrap space-y-12 xl:space-y-0">
+      <div className="containerCard mt-12 flex max-w-[85.83%] mx-auto justify-between items-baseline flex-wrap space-y-12 xl:space-y-0">
         <div className="card">
           <Image src={cardimg1} alt="Main Logo" />
           <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-6">
@@ -381,6 +395,164 @@ export default function Home() {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      {/* WHYUSSECTION */}
+      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[8.125rem]">
+        Why choose EDEN SPA
+      </h2>
+      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] lg:ml-[25%] lg:mr-[25%]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+        quis phasellus tincidunt commodo.
+      </p>
+      <div className="containerWhyUS flex items-center xl:space-x-[6.375rem] justify-center max-w-[85.83%] mx-auto mt-20">
+        <div className="contentLeft">
+          <Image
+            className="hidden xl:block"
+            quality={100}
+            src={whyusvector}
+            alt="Main Logo"
+          />
+        </div>
+        <div className="contentRight space-y-10">
+          <div className="content flex items-center space-x-[1.938rem]">
+            <Image quality={100} src={whyusicon1} alt="Main Logo" />
+            <div>
+              <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
+                EDEN SPA comes to you - always
+              </h3>
+              <p className="font-Poppins text-[#969696] text-sm lg:text-base max-w-[25.875rem]">
+                Book an on-demand massage at home, in your hotel room, or at
+                your office, from our app or zeel.com.
+              </p>
+            </div>
+          </div>
+          <div className="content flex items-center space-x-[1.938rem]">
+            <Image quality={100} src={whyusicon2} alt="Main Logo" />
+            <div>
+              <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
+                Easy app-based scheduling
+              </h3>
+              <p className="font-Poppins text-[#969696] text-sm lg:text-base max-w-[25.875rem]">
+                Book an on-demand massage at home, in your hotel room, or at
+                your office, from our app or zeel.com.
+              </p>
+            </div>
+          </div>
+          <div className="content flex items-center space-x-[1.938rem]">
+            <Image quality={100} src={whyusicon3} alt="Main Logo" />
+            <div>
+              <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
+                Your safety comes first
+              </h3>
+              <p className="font-Poppins text-[#969696] text-sm lg:text-base max-w-[25.875rem]">
+                Book an on-demand massage at home, in your hotel room, or at
+                your office, from our app or zeel.com.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* PROVIDERSECTION */}
+      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
+        Meet your providers
+      </h2>
+      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] lg:ml-[25%] lg:mr-[25%]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+        quis phasellus tincidunt commodo.
+      </p>
+      <div className="containerProvider mt-[3.563rem] max-w-[85.83%] mx-auto flex items-center justify-center md:space-x-[4.875rem] flex-wrap space-y-16 lg:space-y-0 lg:justify-between lg:flex-nowrap">
+        <div className="card space-y-[0.938rem]">
+          <Image quality={100} src={provider1} alt="Main Logo" />
+          <div className="ml-[1.25rem] space-y-[0.938rem]">
+            <h3 className="font-Poppins text-2xl font-medium">James Bennett</h3>
+            <div className="flex items-center space-x-3">
+              <Image quality={100} src={jobvector} alt="Main Logo" />
+              <p className="font-Poppins text-base text-[#969696]">
+                App Developer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="card space-y-[0.938rem]">
+          <Image quality={100} src={provider2} alt="Main Logo" />
+          <div className="ml-[1.25rem] space-y-[0.938rem]">
+            <h3 className="font-Poppins text-2xl font-medium">
+              Kevin Al-Rizal
+            </h3>
+            <div className="flex items-center space-x-3">
+              <Image quality={100} src={jobvector} alt="Main Logo" />
+              <p className="font-Poppins text-base text-[#969696]">
+                Product designer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="card space-y-[0.938rem]">
+          <Image quality={100} src={provider3} alt="Main Logo" />
+          <div className="ml-[1.25rem] space-y-[0.938rem]">
+            <h3 className="font-Poppins text-2xl font-medium">Logo Preneur</h3>
+            <div className="flex items-center space-x-3">
+              <Image quality={100} src={jobvector} alt="Main Logo" />
+              <p className="font-Poppins text-base text-[#969696]">
+                Motion designer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQSECTION */}
+      <div className="containerFaq max-w-[85.83%] mx-auto">
+        <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[10.75rem]">
+          Frequently Asked Questions
+        </h2>
+        <div className="faqs mt-[5.938rem] space-y-6">
+          <Accordion>
+            <AccordionSummary
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                Do I need to tip the massage therapist?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                Do I need to tip the massage therapist?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+        </div>
+        <div className="flex justify-center items-center mt-[4.125rem]">
+          <button className="faqBtn">View all FAQs</button>
+        </div>
       </div>
     </>
   );

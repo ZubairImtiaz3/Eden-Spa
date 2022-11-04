@@ -123,6 +123,30 @@ nav ul li a:hover {
   background-color: #000 !important;
 }
 
+/* FAQSECTION */
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
+  background-color: #2a2a2a;
+}
+.css-o4b71y-MuiAccordionSummary-content {
+  height: 3.2rem;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: #f6f4f2;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  background-color: #2a2a2a;
+}
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded h3 {
+  color: white;
+}
+.css-9l5vo-MuiCollapse-wrapperInner {
+  background-color: #2a2a2a;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  all: inherit;
+}
+
 /* BUTTONS */
 
 .navBtn {
@@ -198,6 +222,35 @@ nav ul li a:hover {
 .massageBtn:hover {
   background: #2a2a2a;
   color: #ffffff;
+}
+
+.faqBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 22px;
+  gap: 8px;
+
+  /* Primary/Dark */
+
+  background: #2a2a2a;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 /* FOOTER */
