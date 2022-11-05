@@ -123,13 +123,27 @@ nav ul li a:hover {
   background-color: #000 !important;
 }
 
+/* MEMBERSECTION */
+
 /* FAQSECTION */
+
+@media screen and (min-width: 1024px) {
+  .containerFaq {
+    background-image: url(../imgs/faq.svg);
+    background-repeat: no-repeat;
+    background-position: 111.5%;
+    background-position-y: -10%;
+  }
+}
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
   background-color: #2a2a2a;
 }
-.css-o4b71y-MuiAccordionSummary-content {
-  height: 3.2rem;
+
+@media screen and (min-width: 1024px) {
+  .css-o4b71y-MuiAccordionSummary-content {
+    height: 3.2rem;
+  }
 }
 .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   background-color: #f6f4f2;
@@ -145,6 +159,9 @@ nav ul li a:hover {
 }
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
   all: inherit;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  color: white;
 }
 
 /* BUTTONS */
@@ -251,6 +268,160 @@ nav ul li a:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+.pricingBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 22px;
+  gap: 8px;
+  border: 1px solid #2a2a2a;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  /* Primary/Dark */
+
+  color: #2a2a2a;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.pricingBtn:hover {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+.pricingBtn2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #2a2a2a;
+  padding: 16px 22px;
+  gap: 8px;
+  border: 1px solid #2a2a2a;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  /* Primary/Dark */
+
+  color: white;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.pricingBtn2:hover {
+  background-color: transparent;
+  color: #2a2a2a;
+}
+
+.subscribeBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 22px;
+  gap: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  background: #2a2a2a;
+}
+.subscribeBtn:hover {
+  background-color: #f6f4f2;
+  color: #2a2a2a;
+}
+.memberBtn {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 22px;
+  gap: 8px;
+
+  /* Primary/Dark */
+
+  border: 1px solid #2a2a2a;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: capitalize;
+
+  /* Primary/Dark */
+
+  color: #2a2a2a;
+}
+.memberBtn:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+/* FORM */
+.emailInput {
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  padding: 16px 328px 16px 22px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #969696;
+  box-shadow: 0px 16px 40px rgba(42, 42, 42, 0.05);
+}
+@media screen and (max-width: 425px) {
+  .emailInput {
+    padding: 16px 228px 16px 22px;
+  }
+  .form form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.emailInput::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #969696;
+  width: 12.375rem;
 }
 
 /* FOOTER */

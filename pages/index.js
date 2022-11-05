@@ -19,12 +19,14 @@ import "swiper/css/navigation";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 // Images
 import fblogo from "../imgs/facebook.png";
 import twitterlogo from "../imgs/twitter.png";
 import linkdinlogo from "../imgs/linkdin.png";
 import heroimg from "../imgs/heroimg.png";
+import herobg from "../imgs/herobg.png";
 import cardimg1 from "../imgs/book.png";
 import cardimg2 from "../imgs/relax.png";
 import cardimg3 from "../imgs/repeat.png";
@@ -503,14 +505,27 @@ export default function Home() {
         </div>
       </div>
 
+      {/* MEMBERSECTION */}
+      <div className="containerMember w-full max-h-max xl:h-[68.313rem] bg-[#F6F4F2] mt-[5.5rem] flex flex-col items-center justify-center gap-[1.875rem] pt-8 pb-8 xl:pt-0 xl-pb-0">
+        <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
+          A Membership Designed for Your Lifestyle
+        </h2>
+        <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
+          Zeel Members enjoy a monthly in-home massage at a preferred rate—the
+          natural choice for making wellness a central to your daily routine.
+        </p>
+        <button className="memberBtn">Become a member</button>
+      </div>
+
       {/* FAQSECTION */}
       <div className="containerFaq max-w-[85.83%] mx-auto">
-        <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[10.75rem]">
+        <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[6.75rem]">
           Frequently Asked Questions
         </h2>
         <div className="faqs mt-[5.938rem] space-y-6">
           <Accordion>
             <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
@@ -531,11 +546,96 @@ export default function Home() {
           </Accordion>
           <Accordion>
             <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
-                Do I need to tip the massage therapist?
+                Can I gift an in-home massage?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                Can I book with the same massage therapist again?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                When will I be charged?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                Will my therapist bring a massage table?
+              </h3>
+            </AccordionSummary>
+            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <AccordionDetails>
+                <p className="font-Poppins text-base md:text-xl text-white">
+                  To make your home massage as convenient as possible, we
+                  automatically include an 18% tip - no cash needed! To make
+                  your home massage as convenient as possible, we automatically
+                  include an 18% tip - no cash needed!
+                </p>
+              </AccordionDetails>
+            </div>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                Can I choose the gender of my therapist?
               </h3>
             </AccordionSummary>
             <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
@@ -553,6 +653,75 @@ export default function Home() {
         <div className="flex justify-center items-center mt-[4.125rem]">
           <button className="faqBtn">View all FAQs</button>
         </div>
+      </div>
+
+      {/* PRICINGSECTION */}
+      <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] mt-[5.25rem]">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
+          Our Pricing
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base lg:ml-[25%] lg:mr-[25%] mt-2">
+          Prices shown are for a 60-minute massage in your area.
+        </p>
+        <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem]">
+          <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">
+              Single Appointment
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+              $159.00
+            </h2>
+            <p className="font-Poppins text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $194.78
+            </p>
+            <button className="pricingBtn mt-[3.25rem]">book a massage</button>
+          </div>
+          <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">Member</h3>
+            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+              $149.00
+            </h2>
+            <p className="font-Poppins text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $182.53
+            </p>
+            <button className="pricingBtn2 mt-[3.25rem]">
+              Subscribe & save
+            </button>
+          </div>
+          <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">
+              Member Plus
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
+              $135.00
+            </h2>
+            <p className="font-Poppins text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $165.38
+            </p>
+            <button className="pricingBtn mt-[3.25rem]">
+              Subscribe & save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* BEFOREFOOTER */}
+      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[11.125rem]">
+        Lets stay connected
+      </h2>
+      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[47.563rem] lg:ml-[25%] lg:mr-[25%] mt-[2.938rem]">
+        Book an on-demand massage at home, in your hotel room, or at your
+        office, from our app or zeel.com.
+      </p>
+      <div className="form flex items-center justify-center flex-wrap gap-[2.875rem] mt-[3.938rem] mb-[11.25rem]">
+        <form action="">
+          <input
+            className="emailInput"
+            type="text"
+            placeholder="Enter Your Email Address"
+          />
+        </form>
+        <button className="subscribeBtn">Subscribe</button>
       </div>
     </>
   );
