@@ -43,6 +43,7 @@ import provider1 from "../imgs/provider1.png";
 import provider2 from "../imgs/provider2.png";
 import provider3 from "../imgs/provider3.png";
 import jobvector from "../imgs/job.png";
+import memberpic from "../imgs/memberpic.png";
 
 export default function Home() {
   return (
@@ -102,7 +103,7 @@ export default function Home() {
       </h2>
       <div className="containerCard mt-12 flex max-w-[85.83%] mx-auto justify-between items-baseline flex-wrap space-y-12 xl:space-y-0">
         <div className="card">
-          <Image src={cardimg1} alt="Main Logo" />
+          <Image className="howItWorkPic" src={cardimg1} alt="Main Logo" />
           <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-6">
             Book
           </h3>
@@ -113,7 +114,7 @@ export default function Home() {
         </div>
 
         <div className="card">
-          <Image src={cardimg2} alt="Main Logo" />
+          <Image className="howItWorkPic" src={cardimg2} alt="Main Logo" />
           <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-6">
             Relax
           </h3>
@@ -124,7 +125,7 @@ export default function Home() {
         </div>
 
         <div className="card">
-          <Image src={cardimg3} alt="Main Logo" />
+          <Image className="howItWorkPic" src={cardimg3} alt="Main Logo" />
           <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-6">
             Repeat
           </h3>
@@ -400,13 +401,15 @@ export default function Home() {
       </div>
 
       {/* WHYUSSECTION */}
-      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[8.125rem]">
-        Why choose EDEN SPA
-      </h2>
-      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] lg:ml-[25%] lg:mr-[25%]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
-        quis phasellus tincidunt commodo.
-      </p>
+      <div className="contentWhyUs flex justify-center flex-col items-center">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[8.125rem]">
+          Why choose EDEN SPA
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+          quis phasellus tincidunt commodo.
+        </p>
+      </div>
       <div className="containerWhyUS flex items-center xl:space-x-[6.375rem] justify-center max-w-[85.83%] mx-auto mt-20">
         <div className="contentLeft">
           <Image
@@ -418,7 +421,12 @@ export default function Home() {
         </div>
         <div className="contentRight space-y-10">
           <div className="content flex items-center space-x-[1.938rem]">
-            <Image quality={100} src={whyusicon1} alt="Main Logo" />
+            <Image
+              className="min-w-[3.875rem]"
+              quality={100}
+              src={whyusicon1}
+              alt="Main Logo"
+            />
             <div>
               <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
                 EDEN SPA comes to you - always
@@ -430,7 +438,12 @@ export default function Home() {
             </div>
           </div>
           <div className="content flex items-center space-x-[1.938rem]">
-            <Image quality={100} src={whyusicon2} alt="Main Logo" />
+            <Image
+              className="min-w-[3.875rem]"
+              quality={100}
+              src={whyusicon2}
+              alt="Main Logo"
+            />
             <div>
               <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
                 Easy app-based scheduling
@@ -442,7 +455,12 @@ export default function Home() {
             </div>
           </div>
           <div className="content flex items-center space-x-[1.938rem]">
-            <Image quality={100} src={whyusicon3} alt="Main Logo" />
+            <Image
+              className="min-w-[3.875rem]"
+              quality={100}
+              src={whyusicon3}
+              alt="Main Logo"
+            />
             <div>
               <h3 className="font-Domine font-medium text-[1.75rem] text-[#2A2A2A]">
                 Your safety comes first
@@ -457,47 +475,69 @@ export default function Home() {
       </div>
 
       {/* PROVIDERSECTION */}
-      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
-        Meet your providers
-      </h2>
-      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] lg:ml-[25%] lg:mr-[25%]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
-        quis phasellus tincidunt commodo.
-      </p>
-      <div className="containerProvider mt-[3.563rem] max-w-[85.83%] mx-auto flex items-center justify-center md:space-x-[4.875rem] flex-wrap space-y-16 lg:space-y-0 lg:justify-between lg:flex-nowrap">
+      <div className="contentProvider flex justify-center flex-col items-center">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
+          Meet your providers
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+          quis phasellus tincidunt commodo.
+        </p>
+      </div>
+
+      <div className="containerProvider mt-[3.563rem] max-w-[85.83%] mx-auto flex items-center justify-center gap-[4.875rem] flex-wrap lg:space-y-0 lg:justify-between lg:flex-nowrap">
         <div className="card space-y-[0.938rem]">
-          <Image quality={100} src={provider1} alt="Main Logo" />
+          <Image
+            className="providerPics"
+            quality={100}
+            src={provider1}
+            alt="Main Logo"
+          />
           <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-2xl font-medium">James Bennett</h3>
+            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
+              James Bennett
+            </h3>
             <div className="flex items-center space-x-3">
               <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-base text-[#969696]">
+              <p className="font-Poppins text-sm md:text-base text-[#969696]">
                 App Developer
               </p>
             </div>
           </div>
         </div>
         <div className="card space-y-[0.938rem]">
-          <Image quality={100} src={provider2} alt="Main Logo" />
+          <Image
+            className="providerPics"
+            quality={100}
+            src={provider2}
+            alt="Main Logo"
+          />
           <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-2xl font-medium">
+            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
               Kevin Al-Rizal
             </h3>
             <div className="flex items-center space-x-3">
               <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-base text-[#969696]">
+              <p className="font-Poppins text-sm md:text-base text-[#969696]">
                 Product designer
               </p>
             </div>
           </div>
         </div>
         <div className="card space-y-[0.938rem]">
-          <Image quality={100} src={provider3} alt="Main Logo" />
+          <Image
+            className="providerPics"
+            quality={100}
+            src={provider3}
+            alt="Main Logo"
+          />
           <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-2xl font-medium">Logo Preneur</h3>
+            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
+              Logo Preneur
+            </h3>
             <div className="flex items-center space-x-3">
               <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-base text-[#969696]">
+              <p className="font-Poppins text-sm md:text-base text-[#969696]">
                 Motion designer
               </p>
             </div>
@@ -507,14 +547,23 @@ export default function Home() {
 
       {/* MEMBERSECTION */}
       <div className="containerMember w-full max-h-max xl:h-[68.313rem] bg-[#F6F4F2] mt-[5.5rem] flex flex-col items-center justify-center gap-[1.875rem] pt-8 pb-8 xl:pt-0 xl-pb-0">
-        <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
-          A Membership Designed for Your Lifestyle
-        </h2>
-        <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
-          Zeel Members enjoy a monthly in-home massage at a preferred rate—the
-          natural choice for making wellness a central to your daily routine.
-        </p>
-        <button className="memberBtn">Become a member</button>
+        <Image
+          className="memberpic hidden md:block"
+          quality={100}
+          src={memberpic}
+          alt="Main Logo"
+        />
+
+        <div className="flex flex-col items-center justify-center gap-[1.875rem] p-2 md:p-0">
+          <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
+            A Membership Designed for Your Lifestyle
+          </h2>
+          <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
+            Zeel Members enjoy a monthly in-home massage at a preferred rate—the
+            natural choice for making wellness a central to your daily routine.
+          </p>
+          <button className="memberBtn">Become a member</button>
+        </div>
       </div>
 
       {/* FAQSECTION */}
@@ -656,49 +705,55 @@ export default function Home() {
       </div>
 
       {/* PRICINGSECTION */}
-      <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] mt-[5.25rem]">
-        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
-          Our Pricing
-        </h2>
-        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base lg:ml-[25%] lg:mr-[25%] mt-2">
-          Prices shown are for a 60-minute massage in your area.
-        </p>
-        <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem]">
+      <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] mt-[5.25rem] pb-8 xl:pb-0">
+        <div className="contentPricing flex justify-center flex-col items-center">
+          <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
+            Our Pricing
+          </h2>
+          <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base lg:ml-[25%] lg:mr-[25%] mt-2 p-2 md:p-0">
+            Prices shown are for a 60-minute massage in your area.
+          </p>
+        </div>
+        <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem] flex-wrap">
           <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
               Single Appointment
             </h3>
-            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
               $159.00
             </h2>
-            <p className="font-Poppins text-base font-light opacity-[0.8]">
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
               + tax and 18% tip = $194.78
             </p>
-            <button className="pricingBtn mt-[3.25rem]">book a massage</button>
+            <button className="pricingBtn text-base mt-[3.25rem]">
+              book a massage
+            </button>
           </div>
           <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">Member</h3>
-            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+              Member
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
               $149.00
             </h2>
-            <p className="font-Poppins text-base font-light opacity-[0.8]">
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
               + tax and 18% tip = $182.53
             </p>
-            <button className="pricingBtn2 mt-[3.25rem]">
+            <button className="pricingBtn2 text-base mt-[3.25rem]">
               Subscribe & save
             </button>
           </div>
           <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-2xl text-[#2A2A2A]">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
               Member Plus
             </h3>
-            <h2 className="font-Poppins font-bold text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
               $135.00
             </h2>
-            <p className="font-Poppins text-base font-light opacity-[0.8]">
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
               + tax and 18% tip = $165.38
             </p>
-            <button className="pricingBtn mt-[3.25rem]">
+            <button className="pricingBtn text-base mt-[3.25rem]">
               Subscribe & save
             </button>
           </div>

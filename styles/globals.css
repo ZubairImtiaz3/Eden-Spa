@@ -22,148 +22,6 @@ a {
   box-sizing: border-box;
 }
 
-/* NAVBAR */
-nav ul li a:hover {
-  color: #2a2a2a;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-family: "Poppins", serif;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-/* HEROSECTION */
-.lineHero {
-  border: 1px solid #2a2a2a;
-  width: 61px;
-  height: 0px;
-}
-.contentHero {
-  height: -webkit-fill-available;
-}
-
-.cardimgs {
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
-}
-
-/* BOOKSECTION */
-.bookMassageCardsContainer .swiper-button-prev {
-  color: #2a2a2a !important;
-}
-.bookMassageCardsContainer .swiper-button-next {
-  color: #2a2a2a !important;
-}
-.bookMassageCardsContainer .swiper-slide-active {
-  margin-left: 4.5rem !important;
-}
-@media screen and (max-width: 350px) {
-  .bookMassageCardsContainer .swiper-slide-active {
-    margin-left: 3.5rem !important;
-  }
-}
-@media screen and (min-width: 500px) {
-  .bookMassageCardsContainer .swiper-slide-active {
-    margin-left: 5.5rem !important;
-  }
-}
-.swiper-pagination {
-  left: -47% !important;
-}
-.containerReivew .swiper {
-  height: 20.75rem;
-}
-
-/* REVIEWSECTION */
-.cardReview {
-  border: 1.5px solid #2a2a2a;
-  border-radius: 12px;
-}
-.cardReview:hover {
-  background-color: #efbd69;
-}
-.containerReivew .swiper-slide-active .cardReview {
-  background-color: #efbd69 !important;
-}
-.swiper-pagination-bullet-active {
-  background-color: #000 !important;
-}
-
-/* MEMBERSECTION */
-
-/* FAQSECTION */
-
-@media screen and (min-width: 1024px) {
-  .containerFaq {
-    background-image: url(../imgs/faq.svg);
-    background-repeat: no-repeat;
-    background-position: 111.5%;
-    background-position-y: -10%;
-  }
-}
-
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
-  background-color: #2a2a2a;
-}
-
-@media screen and (min-width: 1024px) {
-  .css-o4b71y-MuiAccordionSummary-content {
-    height: 3.2rem;
-  }
-}
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
-  background-color: #f6f4f2;
-}
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-  background-color: #2a2a2a;
-}
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded h3 {
-  color: white;
-}
-.css-9l5vo-MuiCollapse-wrapperInner {
-  background-color: #2a2a2a;
-}
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-  all: inherit;
-}
-.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
-  color: white;
-}
-
 /* BUTTONS */
 
 .navBtn {
@@ -279,7 +137,7 @@ nav ul li a:hover {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   /* identical to box height */
 
@@ -310,7 +168,7 @@ nav ul li a:hover {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   /* identical to box height */
 
@@ -390,6 +248,174 @@ nav ul li a:hover {
   background-color: #2a2a2a;
   color: white;
 }
+
+/* NAVBAR */
+nav ul li a:hover {
+  color: #2a2a2a;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Poppins", serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* HEROSECTION */
+.lineHero {
+  border: 1px solid #2a2a2a;
+  width: 61px;
+  height: 0px;
+}
+.contentHero {
+  height: -webkit-fill-available;
+}
+
+/* HOWITWORKSECTION */
+
+@media screen and (max-width: 500px) {
+  .howItWorkPic {
+    height: 5.25rem;
+    width: 5.25rem;
+  }
+}
+
+/* ProviderSection */
+@media screen and (max-width: 500px) {
+  .providerPics {
+    width: 16.563rem;
+    height: auto;
+  }
+}
+
+/* PRICINGSECTION */
+.cardsContainerPricing .cards {
+  width: 18rem;
+}
+.cardimgs {
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+/* BOOKSECTION */
+.bookMassageCardsContainer .swiper-button-prev {
+  color: #2a2a2a !important;
+}
+.bookMassageCardsContainer .swiper-button-next {
+  color: #2a2a2a !important;
+}
+.bookMassageCardsContainer .swiper-slide-active {
+  margin-left: 4.5rem !important;
+}
+@media screen and (max-width: 350px) {
+  .bookMassageCardsContainer .swiper-slide-active {
+    margin-left: 3.5rem !important;
+  }
+}
+@media screen and (min-width: 500px) {
+  .bookMassageCardsContainer .swiper-slide-active {
+    margin-left: 5.5rem !important;
+  }
+}
+.swiper-pagination {
+  left: -47% !important;
+}
+.containerReivew .swiper {
+  height: 20.75rem;
+}
+
+/* REVIEWSECTION */
+.cardReview {
+  border: 1.5px solid #2a2a2a;
+  border-radius: 12px;
+}
+.cardReview:hover {
+  background-color: #efbd69;
+}
+.containerReivew .swiper-slide-active .cardReview {
+  background-color: #efbd69 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+/* MEMBERSECTION */
+
+.memberpic {
+  width: 100%;
+}
+
+/* FAQSECTION */
+
+@media screen and (min-width: 1024px) {
+  .containerFaq {
+    background-image: url(../imgs/faq.svg);
+    background-repeat: no-repeat;
+    background-position: 111.5%;
+    background-position-y: -10%;
+  }
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
+  background-color: #2a2a2a;
+}
+
+@media screen and (min-width: 1024px) {
+  .css-o4b71y-MuiAccordionSummary-content {
+    height: 3.2rem;
+  }
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: #f6f4f2;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  background-color: #2a2a2a;
+}
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded h3 {
+  color: white;
+}
+.css-9l5vo-MuiCollapse-wrapperInner {
+  background-color: #2a2a2a;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  all: inherit;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  color: white;
+}
+
 /* FORM */
 .emailInput {
   box-sizing: border-box;
