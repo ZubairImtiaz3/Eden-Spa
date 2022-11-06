@@ -94,7 +94,9 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <button className="navBtn">Make an appointment</button>
+              <Link href="Appointment">
+                <button className="navBtn">Make an appointment</button>
+              </Link>
             </li>
           </ul>
         </nav>
