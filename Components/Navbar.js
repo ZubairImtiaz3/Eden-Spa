@@ -40,7 +40,7 @@ function Navbar() {
                 </a>
                 <Image src={navVector} alt="vector" />
               </li>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <a href="#">Swedish</a>
                 <a href="#">Deep Tissue</a>
                 <a href="#">Prenatal</a>
