@@ -30,7 +30,6 @@ import fblogo from "../imgs/facebook.png";
 import twitterlogo from "../imgs/twitter.png";
 import linkdinlogo from "../imgs/linkdin.png";
 import heroimg from "../imgs/heroimg.png";
-import herobg from "../imgs/herobg.png";
 import cardimg1 from "../imgs/book.png";
 import cardimg2 from "../imgs/relax.png";
 import cardimg3 from "../imgs/repeat.png";
@@ -58,25 +57,26 @@ export default function Home() {
         <div className="contentHero pt-[5.625rem] max-w-[85.83%] mx-auto">
           <div className="contentLeft">
             <div className="flex items-center space-x-8">
-              <h1 className="font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
+              <h1 className="animate__animated animate__fadeInLeft animate__slow font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
                 The Perfect
               </h1>
-              <div className="lineHero relative -top-4 hidden sm:block"></div>
+
+              <div className="animate__animated animate__fadeIn animate__delay-2s lineHero relative -top-4 hidden sm:block"></div>
             </div>
             <div className="flex items-center space-x-0 sm:space-x-8 mt-[1rem]">
-              <div className="lineHero relative -top-4 hidden sm:block"></div>
-              <h1 className="font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
+              <div className="animate__animated animate__fadeIn animate__delay-3s lineHero relative -top-4 hidden sm:block"></div>
+              <h1 className="animate__delay-1s animate__animated animate__fadeInRight animate__slow font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
                 In-Home Massage
               </h1>
             </div>
 
             <div className="space-y-[3.438rem]">
-              <p className="font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
+              <p className="animate__animated animate__fadeIn animate__slow animate__delay-4s	font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 ipsum quis phasellus tincidunt commodo, mi turpis velit,
                 sollicitudin. Sapien sed petra, vitae sodales in rhoncus ac.
               </p>
-              <button className="navBtn lg:text-base">
+              <button className="animate__animated animate__fadeInUp animate__slow animate__delay-4s navBtn lg:text-base">
                 Make an appointment
               </button>
               <div className="socialIcons flex space-x-10">
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
           </div>
           <Image
-            className="relative top-[-28.6rem] left-[40rem] hidden lg:block"
+            className="animate__animated animate__fadeIn animate__slow animate__delay-4s relative top-[-28.6rem] left-[40rem] hidden lg:block"
             src={heroimg}
             alt="fbLogo"
           />
@@ -510,7 +510,7 @@ export default function Home() {
         <div className="contentRight space-y-10">
           <AnimationOnScroll
             duration={2}
-            delay={1000}
+            delay={800}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
@@ -556,7 +556,7 @@ export default function Home() {
           </AnimationOnScroll>
           <AnimationOnScroll
             duration={2}
-            delay={1500}
+            delay={1300}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
@@ -582,73 +582,81 @@ export default function Home() {
 
       {/* PROVIDERSECTION */}
       <div className="contentProvider flex justify-center flex-col items-center">
-        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
-          Meet your providers
-        </h2>
-        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
-          quis phasellus tincidunt commodo.
-        </p>
+        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+          <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
+            Meet your providers
+          </h2>
+          <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+            quis phasellus tincidunt commodo.
+          </p>
+        </AnimationOnScroll>
       </div>
 
       <div className="containerProvider mt-[3.563rem] max-w-[85.83%] mx-auto flex items-center justify-center gap-[4.875rem] flex-wrap lg:space-y-0 lg:justify-between lg:flex-nowrap">
-        <div className="card space-y-[0.938rem]">
-          <Image
-            className="providerPics"
-            quality={100}
-            src={provider1}
-            alt="Main Logo"
-          />
-          <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
-              James Bennett
-            </h3>
-            <div className="flex items-center space-x-3">
-              <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-sm md:text-base text-[#969696]">
-                App Developer
-              </p>
+        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <div className="card space-y-[0.938rem]">
+            <Image
+              className="providerPics"
+              quality={100}
+              src={provider1}
+              alt="Main Logo"
+            />
+            <div className="ml-[1.25rem] space-y-[0.938rem]">
+              <h3 className="font-Poppins text-xl md:text-2xl font-medium">
+                James Bennett
+              </h3>
+              <div className="flex items-center space-x-3">
+                <Image quality={100} src={jobvector} alt="Main Logo" />
+                <p className="font-Poppins text-sm md:text-base text-[#969696]">
+                  App Developer
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card space-y-[0.938rem]">
-          <Image
-            className="providerPics"
-            quality={100}
-            src={provider2}
-            alt="Main Logo"
-          />
-          <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
-              Kevin Al-Rizal
-            </h3>
-            <div className="flex items-center space-x-3">
-              <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-sm md:text-base text-[#969696]">
-                Product designer
-              </p>
+        </AnimationOnScroll>
+        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+          <div className="card space-y-[0.938rem]">
+            <Image
+              className="providerPics"
+              quality={100}
+              src={provider2}
+              alt="Main Logo"
+            />
+            <div className="ml-[1.25rem] space-y-[0.938rem]">
+              <h3 className="font-Poppins text-xl md:text-2xl font-medium">
+                Kevin Al-Rizal
+              </h3>
+              <div className="flex items-center space-x-3">
+                <Image quality={100} src={jobvector} alt="Main Logo" />
+                <p className="font-Poppins text-sm md:text-base text-[#969696]">
+                  Product designer
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card space-y-[0.938rem]">
-          <Image
-            className="providerPics"
-            quality={100}
-            src={provider3}
-            alt="Main Logo"
-          />
-          <div className="ml-[1.25rem] space-y-[0.938rem]">
-            <h3 className="font-Poppins text-xl md:text-2xl font-medium">
-              Logo Preneur
-            </h3>
-            <div className="flex items-center space-x-3">
-              <Image quality={100} src={jobvector} alt="Main Logo" />
-              <p className="font-Poppins text-sm md:text-base text-[#969696]">
-                Motion designer
-              </p>
+        </AnimationOnScroll>
+        <AnimationOnScroll duration={2} delay={800} animateIn="animate__fadeIn">
+          <div className="card space-y-[0.938rem]">
+            <Image
+              className="providerPics"
+              quality={100}
+              src={provider3}
+              alt="Main Logo"
+            />
+            <div className="ml-[1.25rem] space-y-[0.938rem]">
+              <h3 className="font-Poppins text-xl md:text-2xl font-medium">
+                Logo Preneur
+              </h3>
+              <div className="flex items-center space-x-3">
+                <Image quality={100} src={jobvector} alt="Main Logo" />
+                <p className="font-Poppins text-sm md:text-base text-[#969696]">
+                  Motion designer
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimationOnScroll>
       </div>
 
       {/* MEMBERSECTION */}
@@ -661,228 +669,282 @@ export default function Home() {
         />
 
         <div className="flex flex-col items-center justify-center gap-[1.875rem] p-2 md:p-0">
-          <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
-            A Membership Designed for Your Lifestyle
-          </h2>
-          <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
-            Zeel Members enjoy a monthly in-home massage at a preferred rate—the
-            natural choice for making wellness a central to your daily routine.
-          </p>
-          <button className="memberBtn">Become a member</button>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
+              A Membership Designed for Your Lifestyle
+            </h2>
+          </AnimationOnScroll>
+          <AnimationOnScroll delay={200} animateIn="animate__fadeInRight">
+            <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
+              Zeel Members enjoy a monthly in-home massage at a preferred
+              rate—the natural choice for making wellness a central to your
+              daily routine.
+            </p>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            duration={2}
+            delay={500}
+            animateIn="animate__fadeInUp"
+          >
+            <button className="memberBtn">Become a member</button>
+          </AnimationOnScroll>
         </div>
       </div>
 
       {/* FAQSECTION */}
       <div className="containerFaq max-w-[85.83%] mx-auto">
-        <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[6.75rem]">
-          Frequently Asked Questions
-        </h2>
+        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[6.75rem]">
+            Frequently Asked Questions
+          </h2>
+        </AnimationOnScroll>
         <div className="faqs mt-[5.938rem] space-y-6">
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
-                Do I need to tip the massage therapist?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
-                Can I gift an in-home massage?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
-                Can I book with the same massage therapist again?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
-                When will I be charged?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
-                Will my therapist bring a massage table?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
-                Can I choose the gender of my therapist?
-              </h3>
-            </AccordionSummary>
-            <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
-              <AccordionDetails>
-                <p className="font-Poppins text-base md:text-xl text-white">
-                  To make your home massage as convenient as possible, we
-                  automatically include an 18% tip - no cash needed! To make
-                  your home massage as convenient as possible, we automatically
-                  include an 18% tip - no cash needed!
-                </p>
-              </AccordionDetails>
-            </div>
-          </Accordion>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                  Do I need to tip the massage therapist?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                  Can I gift an in-home massage?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                  Can I book with the same massage therapist again?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                  When will I be charged?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                  Will my therapist bring a massage table?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                  Can I choose the gender of my therapist?
+                </h3>
+              </AccordionSummary>
+              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+                <AccordionDetails>
+                  <p className="font-Poppins text-base md:text-xl text-white">
+                    To make your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed! To make
+                    your home massage as convenient as possible, we
+                    automatically include an 18% tip - no cash needed!
+                  </p>
+                </AccordionDetails>
+              </div>
+            </Accordion>
+          </AnimationOnScroll>
         </div>
-        <div className="flex justify-center items-center mt-[4.125rem]">
-          <button className="faqBtn">View all FAQs</button>
-        </div>
+        <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
+          <div className="flex justify-center items-center mt-[4.125rem]">
+            <button className="faqBtn">View all FAQs</button>
+          </div>
+        </AnimationOnScroll>
       </div>
 
       {/* PRICINGSECTION */}
       <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] mt-[5.25rem] pb-8 xl:pb-0">
-        <div className="contentPricing flex justify-center flex-col items-center">
-          <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
-            Our Pricing
-          </h2>
-          <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base lg:ml-[25%] lg:mr-[25%] mt-2 p-2 md:p-0">
-            Prices shown are for a 60-minute massage in your area.
-          </p>
-        </div>
+        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+          <div className="contentPricing flex justify-center flex-col items-center">
+            <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
+              Our Pricing
+            </h2>
+            <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base lg:ml-[25%] lg:mr-[25%] mt-2 p-2 md:p-0">
+              Prices shown are for a 60-minute massage in your area.
+            </p>
+          </div>
+        </AnimationOnScroll>
         <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem] flex-wrap">
-          <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-              Single Appointment
-            </h3>
-            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
-              $159.00
-            </h2>
-            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-              + tax and 18% tip = $194.78
-            </p>
-            <button className="pricingBtn text-base mt-[3.25rem]">
-              book a massage
-            </button>
-          </div>
-          <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-              Member
-            </h3>
-            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
-              $149.00
-            </h2>
-            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-              + tax and 18% tip = $182.53
-            </p>
-            <button className="pricingBtn2 text-base mt-[3.25rem]">
-              Subscribe & save
-            </button>
-          </div>
-          <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-              Member Plus
-            </h3>
-            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
-              $135.00
-            </h2>
-            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-              + tax and 18% tip = $165.38
-            </p>
-            <button className="pricingBtn text-base mt-[3.25rem]">
-              Subscribe & save
-            </button>
-          </div>
+          <AnimationOnScroll
+            duration={2}
+            delay={700}
+            animateIn="animate__fadeInLeft"
+          >
+            <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+              <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+                Single Appointment
+              </h3>
+              <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+                $159.00
+              </h2>
+              <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+                + tax and 18% tip = $194.78
+              </p>
+              <button className="pricingBtn text-base mt-[3.25rem]">
+                book a massage
+              </button>
+            </div>
+          </AnimationOnScroll>
+          <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
+            <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
+              <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+                Member
+              </h3>
+              <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+                $149.00
+              </h2>
+              <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+                + tax and 18% tip = $182.53
+              </p>
+              <button className="pricingBtn2 text-base mt-[3.25rem]">
+                Subscribe & save
+              </button>
+            </div>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            duration={2}
+            delay={700}
+            animateIn="animate__fadeInRight"
+          >
+            <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+              <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+                Member Plus
+              </h3>
+              <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
+                $135.00
+              </h2>
+              <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+                + tax and 18% tip = $165.38
+              </p>
+              <button className="pricingBtn text-base mt-[3.25rem]">
+                Subscribe & save
+              </button>
+            </div>
+          </AnimationOnScroll>
         </div>
       </div>
 
       {/* BEFOREFOOTER */}
-      <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[11.125rem]">
-        Lets stay connected
-      </h2>
-      <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[47.563rem] lg:ml-[25%] lg:mr-[25%] mt-[2.938rem]">
-        Book an on-demand massage at home, in your hotel room, or at your
-        office, from our app or zeel.com.
-      </p>
+      <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[11.125rem]">
+          Lets stay connected
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[47.563rem] lg:ml-[25%] lg:mr-[25%] mt-[2.938rem]">
+          Book an on-demand massage at home, in your hotel room, or at your
+          office, from our app or zeel.com.
+        </p>
+      </AnimationOnScroll>
+
       <div className="form flex items-center justify-center flex-wrap gap-[2.875rem] mt-[3.938rem] mb-[11.25rem]">
-        <form action="">
-          <input
-            className="emailInput"
-            type="text"
-            placeholder="Enter Your Email Address"
-          />
-        </form>
-        <button className="subscribeBtn">Subscribe</button>
+        <AnimationOnScroll duration={2} delay={300} animateIn="animate__fadeIn">
+          <form action="">
+            <input
+              className="emailInput"
+              type="text"
+              placeholder="Enter Your Email Address"
+            />
+          </form>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          duration={2}
+          delay={400}
+          animateIn="animate__fadeInRight"
+        >
+          <button className="subscribeBtn">Subscribe</button>
+        </AnimationOnScroll>
       </div>
     </>
   );
