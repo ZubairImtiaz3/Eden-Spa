@@ -567,7 +567,7 @@ input[id="selectMassageCard2"]:checked
 input[id="selectMassageCard3"]:checked
   ~ label[for="selectMassageCard3"]
   .cardBookMassage {
-  border: 2px solid #2a2a2a;
+  border: 3px solid #2a2a2a;
 }
 
 .cardBookMassage {
@@ -576,4 +576,92 @@ input[id="selectMassageCard3"]:checked
 
 input[type="radio"] {
   display: none;
+}
+
+.selectDetails .detail {
+  background: #ffffff;
+  /* UI/ Grey */
+
+  border: 1px solid #969696;
+  box-shadow: 0px 16px 40px rgba(42, 42, 42, 0.05);
+}
+
+input[id="selectDetailsPeople1"]:checked
+  ~ label[for="selectDetailsPeople1"]
+  .detail,
+input[id="selectDetailsPeople2"]:checked
+  ~ label[for="selectDetailsPeople2"]
+  .detail {
+  border: 2px solid #2a2a2a;
+  box-shadow: 0px 16px 40px rgba(42, 42, 42, 0.05);
+  color: #2a2a2a;
+}
+
+input[id="selectDetailsPeople1"]:checked
+  ~ label[for="selectDetailsPeople1"]
+  .detail
+  h2,
+input[id="selectDetailsPeople2"]:checked
+  ~ label[for="selectDetailsPeople2"]
+  .detail
+  h2 {
+  color: #2a2a2a;
+}
+
+input[id="selectDetailsDuration1"]:checked
+  ~ label[for="selectDetailsDuration1"]
+  .detail,
+input[id="selectDetailsDuration2"]:checked
+  ~ label[for="selectDetailsDuration2"]
+  .detail,
+input[id="selectDetailsDuration3"]:checked
+  ~ label[for="selectDetailsDuration3"]
+  .detail {
+  border: 2px solid #2a2a2a;
+  box-shadow: 0px 16px 40px rgba(42, 42, 42, 0.05);
+  color: #2a2a2a;
+}
+
+input[id="selectDetailsDuration1"]:checked
+  ~ label[for="selectDetailsDuration1"]
+  .detail
+  h2,
+input[id="selectDetailsDuration2"]:checked
+  ~ label[for="selectDetailsDuration2"]
+  .detail
+  h2,
+input[id="selectDetailsDuration3"]:checked
+  ~ label[for="selectDetailsDuration3"]
+  .detail
+  h2 {
+  color: #2a2a2a;
+}
+
+input[id="selectDetailsGender1"]:checked
+  ~ label[for="selectDetailsGender1"]
+  .detail,
+input[id="selectDetailsGender2"]:checked
+  ~ label[for="selectDetailsGender2"]
+  .detail,
+input[id="selectDetailsGender3"]:checked
+  ~ label[for="selectDetailsGender3"]
+  .detail {
+  border: 2px solid #2a2a2a;
+  box-shadow: 0px 16px 40px rgba(42, 42, 42, 0.05);
+  color: #2a2a2a;
+}
+
+input[id="selectDetailsGender1"]:checked
+  ~ label[for="selectDetailsGender1"]
+  .detail
+  h2,
+input[id="selectDetailsGender2"]:checked
+  ~ label[for="selectDetailsGender2"]
+  .detail
+  h2,
+input[id="selectDetailsGender3"]:checked
+  ~ label[for="selectDetailsGender3"]
+  .detail
+  h2 {
+  color: #2a2a2a;
 }

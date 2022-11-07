@@ -10,9 +10,6 @@ import bookmassage3 from "../imgs/parental.png";
 import finish from "../imgs/finish.png";
 
 function Appointment() {
-  // var continueBtn = document.querySelector("._hsN1w");
-  // continueBtn.addEventListener("click", scrollTo(0, 0));
-
   const step1Content = (
     <div className="containerStep1">
       <div className="content flex justify-center flex-col items-center">
@@ -68,8 +65,218 @@ function Appointment() {
       </div>
     </div>
   );
-  const step2Content = <h1></h1>;
-  const step3Content = <h1></h1>;
+  const step2Content = (
+    <div className="containerStep2">
+      <div className="contentStep2 flex justify-center flex-col items-center">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[6rem]">
+          Massage Details
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+          Massage Details A Zeel in-home massage offers all the benefits of a
+          spa experience with none of the travel, waiting, or logistics—and no
+          need to call a babysitter.
+        </p>
+      </div>
+      <div className="containerStep2Details flex justify-center items-center gap-[3.563rem] mt-28 flex-wrap mb-[3.75rem]">
+        <div className="mainContainerSelectDetailsPeople flex flex-col items-start gap-4">
+          <h2 className="font-Poppins text-base text-[#2A2A2A]">
+            How many people?
+          </h2>
+          <div className="containerSelectDetailsPeople flex">
+            <input
+              type="radio"
+              name="selectDetailsPeople"
+              id="selectDetailsPeople1"
+            />
+            <input
+              type="radio"
+              name="selectDetailsPeople"
+              id="selectDetailsPeople2"
+            />
+            <label htmlFor="selectDetailsPeople1">
+              <div className="selectDetails">
+                <div className="detail w-[17.25rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    One
+                  </h2>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="selectDetailsPeople2">
+              <div className="selectDetails">
+                <div className="detail w-[17.25rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    Multiple
+                  </h2>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div className="mainContainerSelectDetailsDuration flex flex-col items-start gap-4">
+          <h2 className="font-Poppins text-base text-[#2A2A2A]">Duration</h2>
+          <div className="containerSelectDetailsDuration flex">
+            <input
+              type="radio"
+              name="selectDetailsDuration"
+              id="selectDetailsDuration1"
+            />
+            <input
+              type="radio"
+              name="selectDetailsDuration"
+              id="selectDetailsDuration2"
+            />
+            <input
+              type="radio"
+              name="selectDetailsDuration"
+              id="selectDetailsDuration3"
+            />
+            <label htmlFor="selectDetailsDuration1">
+              <div className="selectDetails">
+                <div className="detail w-[13.125rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    60m
+                  </h2>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="selectDetailsDuration2">
+              <div className="selectDetails">
+                <div className="detail w-[13.125rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    75m
+                  </h2>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="selectDetailsDuration3">
+              <div className="selectDetails">
+                <div className="detail w-[13.125rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    90m
+                  </h2>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div className="mainContainerSelectDetailsGender flex flex-col items-start gap-4">
+          <h2 className="font-Poppins text-base text-[#2A2A2A]">
+            Therapist Gender
+          </h2>
+          <div className="containerSelectDetailsGender flex">
+            <input
+              type="radio"
+              name="selectDetailsGender"
+              id="selectDetailsGender1"
+            />
+            <input
+              type="radio"
+              name="selectDetailsGender"
+              id="selectDetailsGender2"
+            />
+            <input
+              type="radio"
+              name="selectDetailsGender"
+              id="selectDetailsGender3"
+            />
+            <label htmlFor="selectDetailsGender1">
+              <div className="selectDetails">
+                <div className="detail w-[11.5rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    Female
+                  </h2>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="selectDetailsGender2">
+              <div className="selectDetails">
+                <div className="detail w-[11.5rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    Male
+                  </h2>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="selectDetailsGender3">
+              <div className="selectDetails">
+                <div className="detail w-[11.5rem] h-[3.5rem] flex justify-center items-center">
+                  <h2 className="font-Poppins text-[#969696] text-sm lg:text-base">
+                    Either
+                  </h2>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div className="mainContainerSelectDetailsFormStep2 flex flex-col items-start gap-4">
+          <h2 className="font-Poppins text-base text-[#2A2A2A]">
+            Who is this mssage for?
+          </h2>
+          <div className="formStep2">
+            <div className="w-[39.25rem] h-[3.5rem] relative border border-[#969696] text-gray-800">
+              <label for="frm-whatever" className="sr-only">
+                My field
+              </label>
+              <select
+                className="appearance-none w-full h-full py-1 px-5 bg-white font-Poppins text-[#969696] text-sm lg:text-base"
+                name="whatever"
+                id="frm-whatever"
+              >
+                <option
+                  className="font-Poppins text-[#969696] text-sm lg:text-base"
+                  value=""
+                >
+                  -Please Select-
+                </option>
+                <option
+                  className="font-Poppins text-[#969696] text-sm lg:text-base"
+                  value="1"
+                >
+                  Male
+                </option>
+                <option
+                  className="font-Poppins text-[#969696] text-sm lg:text-base"
+                  value="2"
+                >
+                  Female
+                </option>
+                <option
+                  className="font-Poppins text-[#969696] text-sm lg:text-base"
+                  value="3"
+                >
+                  Either
+                </option>
+              </select>
+              <div className="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700 border-l">
+                <svg
+                  className="h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+  const step3Content = (
+    <div className="containerStep3">
+      <div className="contentStep3 flex justify-center flex-col items-center">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[6rem]">
+          Address
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+          A Zeel in-home massage offers all the benefits of a spa experience
+          with none of the travel, waiting, or logistics—and no need to call a
+          babysitter.
+        </p>
+      </div>
+    </div>
+  );
   const step4Content = <h1></h1>;
   const step5Content = (
     <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] pb-8 xl:pb-0">
@@ -157,7 +364,7 @@ function Appointment() {
 
   return (
     <>
-      <div className="mt-[2.688rem]">
+      <div className="pt-[2.688rem] bg-[#F6F4F2]">
         <StepProgressBar
           startingStep={0}
           nextBtnName={"Continue"}
