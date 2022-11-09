@@ -4,6 +4,9 @@ import Image from "next/image";
 import logo from "../imgs/logo.png";
 import navVector from "../imgs/navvector.png";
 
+//SMOOTH SCROLL
+import { Link as Link1 } from "react-scroll";
+
 function Navbar() {
   //MOBILE NAV STATES
 
@@ -28,6 +31,35 @@ function Navbar() {
     );
   }
 
+  function MenuItem1({ children, href }) {
+    const hideHam = () => {
+      setOpen(false);
+      return (
+        <div className="p-2">
+          <Link1 onClick={hideHam} to={href} className={style.item}>
+            {children}
+          </Link1>
+        </div>
+      );
+    };
+
+    return (
+      <div className="p-2">
+        <Link1
+          spy={true}
+          smooth={true}
+          offset={-40}
+          duration={1200}
+          onClick={hideHam}
+          to={href}
+          className={style.item}
+        >
+          {children}
+        </Link1>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="bg-[#f6f4f2] pt-[0.1rem]">
@@ -35,30 +67,49 @@ function Navbar() {
           <ul className="gap-[4.5rem] hidden xl:flex">
             <div className="dropdown relative inline-block">
               <li className="flex items-center space-x-3 cursor-pointer">
-                <a className="font-Poppins text-[#2A2A2A] text-base">
+                <Link
+                  href="/"
+                  className="font-Poppins text-[#2A2A2A] text-base"
+                >
                   In-Home Services
-                </a>
+                </Link>
                 <Image src={navVector} alt="vector" />
               </li>
               <div className="dropdown-content">
-                <a href="#">Swedish</a>
-                <a href="#">Deep Tissue</a>
-                <a href="#">Prenatal</a>
+                <Link href="Appointment">Swedish</Link>
+                <Link href="Appointment">Deep Tissue</Link>
+                <Link href="Appointment">Prenatal</Link>
               </div>
             </div>
             <li>
-              <Link href="/" className="font-Poppins text-[#969696] text-base">
+              <Link1
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1200}
+                to="howitworks"
+                className="font-Poppins cursor-pointer text-[#969696] text-base"
+              >
                 Store
-              </Link>
+              </Link1>
             </li>
             <li>
-              <Link href="/" className="font-Poppins text-[#969696] text-base">
+              <Link1
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1500}
+                to="blog"
+                className="font-Poppins cursor-pointer text-[#969696] text-base"
+              >
                 Blog
-              </Link>
+              </Link1>
             </li>
           </ul>
 
-          <Image quality={100} priority src={logo} alt="Main Logo" />
+          <Link href="/">
+            <Image quality={100} priority src={logo} alt="Main Logo" />
+          </Link>
 
           <div className="mobileMenu mt-2 xl:hidden">
             <div
@@ -79,19 +130,26 @@ function Navbar() {
               </button>
               <MenuContainer>
                 <MenuItem href="/">Home</MenuItem>
-                <MenuItem href="/">Store</MenuItem>
-                <MenuItem href="/">Blog</MenuItem>
-                <MenuItem href="/">Trust & Safety</MenuItem>
-                <MenuItem href="/">Make an appointment</MenuItem>
+                <MenuItem1 href="howitworks">Store</MenuItem1>
+                <MenuItem1 href="blog">Blog</MenuItem1>
+                <MenuItem1 href="review">Trust & Safety</MenuItem1>
+                <MenuItem href="Appointment">Make an appointment</MenuItem>
               </MenuContainer>
             </Menu>
           </div>
 
           <ul className="gap-[4.5rem] items-center hidden xl:flex">
             <li>
-              <Link href="/" className="font-Poppins text-[#969696] text-base">
+              <Link1
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={2000}
+                to="review"
+                className="font-Poppins cursor-pointer text-[#969696] text-base"
+              >
                 Trust & Safety
-              </Link>
+              </Link1>
             </li>
             <li>
               <Link href="Appointment">

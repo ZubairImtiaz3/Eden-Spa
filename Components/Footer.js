@@ -9,7 +9,9 @@ function Footer() {
       <footer>
         <div className="h-[34.5rem] sm:h-[17.5rem] w-full bg-[#2A2A2A]">
           <div className="contentFooter max-w-[85.83%] mx-auto flex flex-col space-y-6 sm:flex-row flex-wrap justify-around lg:justify-between items-center pt-[3.75rem]">
-            <Image priority src={logo} alt="Main Logo" />
+            <Link href="/">
+              <Image priority src={logo} alt="Main Logo" />
+            </Link>
 
             <ul className="flex sm:space-x-12 xl:space-x-[3.813rem] flex-col space-y-6 sm:space-y-0 sm:flex-row items-center">
               <li>

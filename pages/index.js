@@ -48,9 +48,21 @@ import provider3 from "../imgs/provider3.png";
 import jobvector from "../imgs/job.png";
 import memberpic from "../imgs/memberpic.png";
 
+//SCROLLTOTOP
+import ScrollTop from "react-scrolltop-button";
+
 export default function Home() {
   return (
     <>
+      <ScrollTop
+        text="^"
+        distance={850}
+        className="scroll-your-role"
+        speed={1000}
+        target={10}
+        breakpoint={2560}
+      />
+
       {/* HEROSECTION */}
 
       <div className="bgHeroSection bg-[#F6F4F2] w-auto h-[53rem] sm:h-[43rem]">
@@ -64,21 +76,25 @@ export default function Home() {
               <div className="animate__animated animate__fadeIn animate__delay-2s lineHero relative -top-4 hidden sm:block"></div>
             </div>
             <div className="flex items-center space-x-0 sm:space-x-8 mt-[1rem]">
-              <div className="animate__animated animate__fadeIn animate__delay-3s lineHero relative -top-4 hidden sm:block"></div>
+              <div className="animate__animated animate__fadeIn animate__delay-3s animate__faster lineHero relative -top-4 hidden sm:block"></div>
               <h1 className="animate__delay-1s animate__animated animate__fadeInRight animate__slow font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
                 In-Home Massage
               </h1>
             </div>
 
             <div className="space-y-[3.438rem]">
-              <p className="animate__animated animate__fadeIn animate__slow animate__delay-4s	font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
+              <p className="animate__animated animate__fadeIn animate__slow animate__delay-3s	font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 ipsum quis phasellus tincidunt commodo, mi turpis velit,
                 sollicitudin. Sapien sed petra, vitae sodales in rhoncus ac.
               </p>
-              <button className="animate__animated animate__fadeInUp animate__slow animate__delay-4s navBtn lg:text-base">
-                Make an appointment
-              </button>
+              <div>
+                <Link href="Appointment">
+                  <button className="animate__animated animate__fadeInUp animate__slow animate__delay-4s navBtn lg:text-base">
+                    Make an appointment
+                  </button>
+                </Link>
+              </div>
               <div className="socialIcons flex space-x-10">
                 <Link href="/">
                   <Image src={twitterlogo} alt="twitterLogo" />
@@ -102,7 +118,10 @@ export default function Home() {
 
       {/* CARDSSECTION */}
       <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
-        <h2 className="font-Domine font-medium text-[2.5rem] lg:text-[4rem] mt-[6rem] max-w-[85.83%] mx-auto">
+        <h2
+          id="howitworks"
+          className="font-Domine font-medium text-[2.5rem] lg:text-[4rem] mt-[6rem] max-w-[85.83%] mx-auto"
+        >
           How it works
         </h2>
       </AnimationOnScroll>
@@ -155,7 +174,10 @@ export default function Home() {
 
       {/* MASSAGESECTION */}
 
-      <div className="massageContainer max-w-[85.83%] mx-auto space-y-[4.85rem] mt-[9.563rem]">
+      <div
+        id="blog"
+        className="massageContainer max-w-[85.83%] mx-auto space-y-[4.85rem] mt-[9.563rem]"
+      >
         <div className="flex items-center justify-center">
           <div className="contentLeft max-w-[36rem] space-y-[2.563rem]">
             <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
@@ -180,9 +202,11 @@ export default function Home() {
               </p>
             </AnimationOnScroll>
             <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
-              <button className="massageBtn lg:text-base">
-                Make an appointment
-              </button>
+              <Link href="Appointment">
+                <button className="massageBtn lg:text-base">
+                  Make an appointment
+                </button>
+              </Link>
             </AnimationOnScroll>
           </div>
           <AnimationOnScroll
@@ -231,7 +255,9 @@ export default function Home() {
               delay={300}
               animateIn="animate__fadeInUp"
             >
-              <button className="massageBtn">Make an appointment</button>
+              <Link href="Appointment">
+                <button className="massageBtn">Make an appointment</button>
+              </Link>
             </AnimationOnScroll>
           </div>
         </div>
@@ -352,7 +378,7 @@ export default function Home() {
       </div>
 
       {/* REVIEWSECTION */}
-      <div className="containerReivew ml-8 sm:ml-[6.375rem]">
+      <div id="review" className="containerReivew ml-8 sm:ml-[6.375rem]">
         <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
           <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[10rem] max-w-[47.188rem] mb-[4rem]">
             What our customers say about EDEN SPA
@@ -533,7 +559,7 @@ export default function Home() {
           </AnimationOnScroll>
           <AnimationOnScroll
             duration={2}
-            delay={1200}
+            delay={1000}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
@@ -556,7 +582,7 @@ export default function Home() {
           </AnimationOnScroll>
           <AnimationOnScroll
             duration={2}
-            delay={1300}
+            delay={900}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
