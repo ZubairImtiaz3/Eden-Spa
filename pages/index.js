@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </div>
           <Image
-            className="animate__animated animate__fadeIn animate__slow animate__delay-4s relative top-[-28.6rem] left-[40rem] hidden lg:block"
+            className="heroImg animate__animated animate__fadeIn animate__slow animate__delay-4s relative top-[-28.6rem] left-[40rem] hidden xl:block"
             src={heroimg}
             alt="fbLogo"
           />

@@ -299,6 +299,12 @@ nav ul li a:hover {
   height: -webkit-fill-available;
 }
 
+@media screen and (max-width: 1280px) {
+  .heroImg {
+    width: 50%;
+  }
+}
+
 /* HOWITWORKSECTION */
 
 @media screen and (max-width: 500px) {
