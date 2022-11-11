@@ -9,6 +9,9 @@ import bookmassage2 from "../imgs/deeptissue.png";
 import bookmassage3 from "../imgs/parental.png";
 import finish from "../imgs/finish.png";
 
+//SCROLLTOTOP
+import ScrollTop from "react-scrolltop-button";
+
 function Appointment() {
   const step1Content = (
     <div className="containerStep1">
@@ -535,8 +538,8 @@ function Appointment() {
   );
 
   // setup step validators, will be called before proceeding to the next step
-  function step2Validator() {
-    return true;
+  function stepValidator() {
+    window.scrollTo(0, 0);
   }
 
   function step3Validator() {
@@ -545,6 +548,15 @@ function Appointment() {
 
   return (
     <>
+      <ScrollTop
+        text="^"
+        distance={550}
+        className="scroll-your-role"
+        speed={1000}
+        target={10}
+        breakpoint={2560}
+      />
+
       <div className="md:pt-[2.688rem] bg-[#F6F4F2] pb-[0.1rem]">
         <StepProgressBar
           startingStep={0}
@@ -555,32 +567,37 @@ function Appointment() {
               label: "Choose",
               name: "Choose",
               content: step1Content,
+              validator: stepValidator,
             },
             {
               label: "Details",
               name: "Details",
               content: step2Content,
+              validator: stepValidator,
             },
             {
               label: "Location",
               name: "Location",
               content: step3Content,
-              validator: step2Validator,
+              validator: stepValidator,
             },
             {
               label: "Time",
               name: "Time",
               content: step4Content,
+              validator: stepValidator,
             },
             {
               label: "Payment",
               name: "Payment",
               content: step5Content,
+              validator: stepValidator,
             },
             {
               label: "Finish",
               name: "Finish",
               content: step6Content,
+              validator: stepValidator,
             },
           ]}
         />
