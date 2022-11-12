@@ -45,7 +45,7 @@ import whyusicon3 from "../imgs/whyusicon3.png";
 import provider1 from "../imgs/provider1.png";
 import provider2 from "../imgs/provider2.png";
 import provider3 from "../imgs/provider3.png";
-import jobvector from "../imgs/job.png";
+import jobvector from "../imgs/Job.png";
 import memberpic from "../imgs/memberpic.png";
 
 //SCROLLTOTOP
