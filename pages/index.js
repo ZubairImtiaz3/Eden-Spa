@@ -559,7 +559,7 @@ export default function Home() {
           </AnimationOnScroll>
           <AnimationOnScroll
             duration={2}
-            delay={1000}
+            delay={900}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">

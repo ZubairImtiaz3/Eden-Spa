@@ -493,50 +493,62 @@ function Appointment() {
       </div>
 
       <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem] flex-wrap">
-        <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-          <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-            Single Appointment
-          </h3>
-          <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
-            $159.00
-          </h2>
-          <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-            + tax and 18% tip = $194.78
-          </p>
-          <button className="pricingBtn text-base mt-[3.25rem]">
-            book a massage
-          </button>
-        </div>
-
-        <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
-          <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-            Member
-          </h3>
-          <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
-            $149.00
-          </h2>
-          <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-            + tax and 18% tip = $182.53
-          </p>
-          <button className="pricingBtn2 text-base mt-[3.25rem]">
-            Subscribe & save
-          </button>
-        </div>
-
-        <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
-          <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
-            Member Plus
-          </h3>
-          <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
-            $135.00
-          </h2>
-          <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
-            + tax and 18% tip = $165.38
-          </p>
-          <button className="pricingBtn text-base mt-[3.25rem]">
-            Subscribe & save
-          </button>
-        </div>
+        <input type="radio" name="selectPricing" id="selectPricingCard1" />
+        <input
+          checked
+          type="radio"
+          name="selectPricing"
+          id="selectPricingCard2"
+        />
+        <input type="radio" name="selectPricing" id="selectPricingCard3" />
+        <label htmlFor="selectPricingCard1">
+          <div className="cardPricing w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+              Single Appointment
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+              $159.00
+            </h2>
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $194.78
+            </p>
+            <button className="pricingBtn text-base mt-[3.25rem]">
+              book a massage
+            </button>
+          </div>
+        </label>
+        <label htmlFor="selectPricingCard2">
+          <div className="cardPricing w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+              Member
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#2A2A2A] mt-[1.813rem]">
+              $149.00
+            </h2>
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $182.53
+            </p>
+            <button className="pricingBtn2 text-base mt-[3.25rem]">
+              Subscribe & save
+            </button>
+          </div>
+        </label>
+        <label htmlFor="selectPricingCard3">
+          <div className="cardPricing w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
+            <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
+              Member Plus
+            </h3>
+            <h2 className="font-Poppins font-bold text-[2rem] md:text-[2.5rem] text-[#EFBD69] mt-[1.813rem]">
+              $135.00
+            </h2>
+            <p className="font-Poppins text-sm md:text-base font-light opacity-[0.8]">
+              + tax and 18% tip = $165.38
+            </p>
+            <button className="pricingBtn text-base mt-[3.25rem]">
+              Subscribe & save
+            </button>
+          </div>
+        </label>
       </div>
     </div>
   );
