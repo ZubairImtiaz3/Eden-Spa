@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import StepProgressBar from "react-step-progress";
 import "react-step-progress/dist/index.css";
@@ -11,6 +11,9 @@ import finish from "../imgs/finish.png";
 
 //SCROLLTOTOP
 import ScrollTop from "react-scrolltop-button";
+
+//DATETIMEPICKER
+import DateTimePicker from "../Components/Datetimepicker";
 
 function Appointment() {
   const step1Content = (
@@ -461,7 +464,21 @@ function Appointment() {
       </div>
     </div>
   );
-  const step4Content = <h1></h1>;
+  const step4Content = (
+    <div className="containerStep1">
+      <div className="content flex justify-center flex-col items-center">
+        <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[6rem]">
+          When would you like to book?
+        </h2>
+        <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
+          A Zeel in-home massage offers all the benefits of a spa experience
+          with none of the travel, waiting, or logistics—and no need to call a
+          babysitter.
+        </p>
+      </div>
+      <DateTimePicker />
+    </div>
+  );
   const step5Content = (
     <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] pb-8 xl:pb-0">
       <div className="contentPricing flex justify-center flex-col items-center">
@@ -540,6 +557,7 @@ function Appointment() {
   // setup step validators, will be called before proceeding to the next step
   function stepValidator() {
     window.scrollTo(0, 0);
+    return true;
   }
 
   function step3Validator() {
