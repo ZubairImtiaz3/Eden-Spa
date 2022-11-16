@@ -13,7 +13,7 @@ import finish from "../imgs/finish.png";
 import ScrollTop from "react-scrolltop-button";
 
 //DATETIMEPICKER
-import DateTimePicker from "../Components/Datetimepicker";
+import DateTimePicker from "../components/Datetimepicker";
 
 function Appointment() {
   const step1Content = (
