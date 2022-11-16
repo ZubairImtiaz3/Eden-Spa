@@ -391,15 +391,7 @@ nav ul li a:hover {
   }
 }
 
-.MuiPaper-root {
-  all: inherit;
-}
-
-.MuiAccordion-root {
-  background-color: #f6f4f2;
-}
-
-.Mui-expanded {
+.Mui-expanded .MuiButtonBase-root {
   background-color: #2a2a2a;
 }
 
@@ -417,6 +409,8 @@ nav ul li a:hover {
 
 .MuiPaper-root {
   border-radius: 0px !important;
+  background-color: #f6f4f2;
+  box-shadow: none !important;
 }
 
 /* FORM */
