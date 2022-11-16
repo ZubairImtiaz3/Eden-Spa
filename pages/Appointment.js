@@ -581,7 +581,7 @@ function Appointment() {
       <ScrollTop
         text="^"
         distance={550}
-        className="scroll-your-role"
+        className="react-scrolltop-button"
         speed={1000}
         target={10}
         breakpoint={2560}

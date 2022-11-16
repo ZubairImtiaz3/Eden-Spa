@@ -57,7 +57,7 @@ export default function Home() {
       <ScrollTop
         text="^"
         distance={850}
-        className="scroll-your-role"
+        className="react-scrolltop-button"
         speed={1000}
         target={10}
         breakpoint={2560}
