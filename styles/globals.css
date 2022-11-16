@@ -409,8 +409,11 @@ nav ul li a:hover {
 
 .MuiPaper-root {
   border-radius: 0px !important;
-  background-color: #f6f4f2;
   box-shadow: none !important;
+}
+
+.MuiPaper-root .MuiButtonBase-root {
+  background-color: #f6f4f2;
 }
 
 /* FORM */
