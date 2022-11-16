@@ -732,11 +732,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   Do I need to tip the massage therapist?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A] md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we
@@ -755,11 +755,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   Can I gift an in-home massage?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A] md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we
@@ -778,11 +778,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   Can I book with the same massage therapist again?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A]  md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we
@@ -801,11 +801,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   When will I be charged?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A]  md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we
@@ -824,11 +824,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl md:mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   Will my therapist bring a massage table?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A]  md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we
@@ -847,11 +847,11 @@ export default function Home() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl mt-[0.625rem]">
+                <h3 className="font-Poppins text-[#2A2A2A] font-medium text-xl md:text-2xl">
                   Can I choose the gender of my therapist?
                 </h3>
               </AccordionSummary>
-              <div className="bg-[#2A2A2A] md:h-[5.438rem] md:mt-[0.625rem]">
+              <div className="bg-[#2A2A2A]  md:pt-[0.625rem]">
                 <AccordionDetails>
                   <p className="font-Poppins text-base md:text-xl text-white">
                     To make your home massage as convenient as possible, we

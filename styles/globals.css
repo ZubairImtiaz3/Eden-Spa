@@ -391,32 +391,32 @@ nav ul li a:hover {
   }
 }
 
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
+.MuiPaper-root {
+  all: inherit;
+}
+
+.MuiAccordion-root {
+  background-color: #f6f4f2;
+}
+
+.Mui-expanded {
   background-color: #2a2a2a;
 }
 
-@media screen and (min-width: 1024px) {
-  .css-o4b71y-MuiAccordionSummary-content {
-    height: 3.2rem;
-  }
-}
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
-  background-color: #f6f4f2;
-}
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-  background-color: #2a2a2a;
-}
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded h3 {
+.Mui-expanded h3 {
   color: white;
 }
-.css-9l5vo-MuiCollapse-wrapperInner {
-  background-color: #2a2a2a;
+
+.Mui-expanded svg {
+  fill: white;
 }
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-  all: inherit;
+
+.MuiAccordionSummary-root {
+  height: 4.688rem;
 }
-.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
-  color: white;
+
+.MuiPaper-root {
+  border-radius: 0px !important;
 }
 
 /* FORM */
