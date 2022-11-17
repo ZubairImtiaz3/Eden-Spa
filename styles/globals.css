@@ -806,3 +806,10 @@ input[id="selectPricingCard3"]:checked
 .MuiClock-pmButton {
   display: none !important;
 }
+
+.MuiPickersArrowSwitcher-root {
+  justify-content: center !important;
+  position: relative !important;
+  right: 0px !important;
+  top: -10px !important;
+}
