@@ -3,6 +3,9 @@ import Link from "next/dist/client/link";
 import Image from "next/image";
 import logo from "../imgs/logo.png";
 
+//SMOOTH SCROLL
+import { Link as Link1 } from "react-scroll";
+
 function Footer() {
   return (
     <>
@@ -20,19 +23,40 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="font-Poppins text-white text-base">
+                <Link1
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={1200}
+                  to="howitworks"
+                  className="font-Poppins cursor-pointer text-white text-base"
+                >
                   Store
-                </Link>
+                </Link1>
               </li>
               <li>
-                <Link href="/" className="font-Poppins text-white text-base">
+                <Link1
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={1500}
+                  to="blog"
+                  className="font-Poppins cursor-pointer text-white text-base"
+                >
                   Blog
-                </Link>
+                </Link1>
               </li>
               <li>
-                <Link href="/" className="font-Poppins text-white text-base">
+                <Link1
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={2000}
+                  to="review"
+                  className="font-Poppins cursor-pointer text-white text-base"
+                >
                   Trust & Safety
-                </Link>
+                </Link1>
               </li>
             </ul>
 
