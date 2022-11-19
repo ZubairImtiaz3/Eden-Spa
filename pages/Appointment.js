@@ -16,6 +16,13 @@ import ScrollTop from "react-scrolltop-button";
 import DateTimePicker from "../components/Datetimepicker";
 
 function Appointment() {
+  //Validation
+  const [validate, setvalidate] = useState(false);
+
+  let validationRadio = () => {
+    setvalidate(true);
+  };
+
   const step1Content = (
     <div className="containerStep1">
       <div className="content flex justify-center flex-col items-center">
@@ -29,9 +36,27 @@ function Appointment() {
         </p>
       </div>
       <div className="bookMassageCardsContainer mt-[5.563rem] flex items-center justify-center gap-7 mb-[3.75rem] flex-wrap">
-        <input type="radio" name="selectMassage" id="selectMassageCard1" />
-        <input type="radio" name="selectMassage" id="selectMassageCard2" />
-        <input type="radio" name="selectMassage" id="selectMassageCard3" />
+        <input
+          validate={validate}
+          onClick={validationRadio}
+          type="radio"
+          name="selectMassage"
+          id="selectMassageCard1"
+        />
+        <input
+          validate={validate}
+          onClick={validationRadio}
+          type="radio"
+          name="selectMassage"
+          id="selectMassageCard2"
+        />
+        <input
+          validate={validate}
+          onClick={validationRadio}
+          type="radio"
+          name="selectMassage"
+          id="selectMassageCard3"
+        />
         <label htmlFor="selectMassageCard1">
           <div className="cardBookMassage w-[20rem] md:w-[24.5rem] h-[22.188rem] flex flex-col items-center justify-center">
             <Image src={bookmassage1} alt="Main Logo" />
@@ -569,7 +594,12 @@ function Appointment() {
   // setup step validators, will be called before proceeding to the next step
   function stepValidator() {
     window.scrollTo(0, 0);
-    return true;
+
+    if (validationRadio()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   function step3Validator() {
