@@ -17,11 +17,11 @@ import DateTimePicker from "../components/Datetimepicker";
 
 function Appointment() {
   //Validation
-  const [validate, setvalidate] = useState(false);
+  const [validate, setvalidate] = useState(true);
 
-  let validationRadio = () => {
+  function validationRadio() {
     setvalidate(true);
-  };
+  }
 
   const step1Content = (
     <div className="containerStep1">
@@ -595,7 +595,7 @@ function Appointment() {
   function stepValidator() {
     window.scrollTo(0, 0);
 
-    if (validationRadio()) {
+    if (validate === true) {
       return true;
     } else {
       return false;
@@ -665,5 +665,4 @@ function Appointment() {
     </>
   );
 }
-
 export default Appointment;
