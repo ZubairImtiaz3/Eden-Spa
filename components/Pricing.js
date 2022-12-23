@@ -7,7 +7,11 @@ function Pricing() {
   return (
     <>
       <div className="containerPricing w-full max-h-max xl:h-[52.5rem] bg-[#F6F4F2] mt-[5.25rem] pb-8 xl:pb-0">
-        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateOnce={true}
+          delay={300}
+          animateIn="animate__fadeIn"
+        >
           <div className="contentPricing flex justify-center flex-col items-center">
             <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center pt-[5.938rem]">
               Our Pricing
@@ -19,8 +23,8 @@ function Pricing() {
         </AnimationOnScroll>
         <div className="cardsContainerPricing flex justify-center gap-10 mt-[4.125rem] flex-wrap">
           <AnimationOnScroll
-            duration={2}
-            delay={700}
+            animateOnce={true}
+            delay={400}
             animateIn="animate__fadeInLeft"
           >
             <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">
@@ -38,7 +42,7 @@ function Pricing() {
               </button>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
             <div className="cards w-[20rem] h-[22.375rem] bg-[#EFBD69] flex flex-col items-center justify-center">
               <h3 className="font-Poppins text-xl md:text-2xl text-[#2A2A2A]">
                 Member
@@ -55,8 +59,8 @@ function Pricing() {
             </div>
           </AnimationOnScroll>
           <AnimationOnScroll
-            duration={2}
-            delay={700}
+            animateOnce={true}
+            delay={500}
             animateIn="animate__fadeInRight"
           >
             <div className="cards w-[20rem] h-[22.375rem] bg-[#FFFFFF] flex flex-col items-center justify-center">

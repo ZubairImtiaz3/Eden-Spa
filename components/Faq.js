@@ -13,13 +13,13 @@ function Faq() {
   return (
     <>
       <div className="containerFaq max-w-[85.83%] mx-auto">
-        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <h2 className="font-Domine text-[#2A2A2A] max-w-[39.188rem] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[6.75rem]">
             Frequently Asked Questions
           </h2>
         </AnimationOnScroll>
         <div className="faqs mt-[5.938rem] space-y-6">
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -42,7 +42,7 @@ function Faq() {
               </div>
             </Accordion>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -65,7 +65,7 @@ function Faq() {
               </div>
             </Accordion>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -88,7 +88,7 @@ function Faq() {
               </div>
             </Accordion>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -111,7 +111,7 @@ function Faq() {
               </div>
             </Accordion>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -134,7 +134,7 @@ function Faq() {
               </div>
             </Accordion>
           </AnimationOnScroll>
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -158,7 +158,7 @@ function Faq() {
             </Accordion>
           </AnimationOnScroll>
         </div>
-        <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
           <div className="flex justify-center items-center mt-[4.125rem]">
             <button className="faqBtn">View all FAQs</button>
           </div>

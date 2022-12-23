@@ -16,12 +16,12 @@ function Reviews() {
   return (
     <>
       <div id="review" className="containerReivew ml-8 sm:ml-[6.375rem]">
-        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[10rem] max-w-[47.188rem] mb-[4rem]">
             What our customers say about EDEN SPA
           </h2>
         </AnimationOnScroll>
-        <AnimationOnScroll duration={2} animateIn="animate__fadeInRight">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight">
           <Swiper
             slidesPerView={3}
             autoplay={{

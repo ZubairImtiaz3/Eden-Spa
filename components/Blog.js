@@ -18,13 +18,13 @@ function Blog() {
       >
         <div className="flex items-center justify-center">
           <div className="contentLeft max-w-[36rem] space-y-[2.563rem]">
-            <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
               <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem]">
                 On-Demand Massage Made Simple
               </h2>
             </AnimationOnScroll>
             <AnimationOnScroll
-              duration={2}
+              animateOnce={true}
               delay={300}
               animateIn="animate__fadeIn"
             >
@@ -39,7 +39,7 @@ function Blog() {
                 days in advance.
               </p>
             </AnimationOnScroll>
-            <AnimationOnScroll duration={2} animateIn="animate__fadeInUp">
+            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
               <Link href="Appointment">
                 <button className="massageBtn lg:text-base">
                   Make an appointment
@@ -48,8 +48,8 @@ function Blog() {
             </AnimationOnScroll>
           </div>
           <AnimationOnScroll
-            duration={2}
-            delay={1000}
+            animateOnce={true}
+            delay={600}
             animateIn="animate__fadeInRight"
           >
             <Image
@@ -60,7 +60,7 @@ function Blog() {
           </AnimationOnScroll>
         </div>
         <div className="flex items-center justify-center">
-          <AnimationOnScroll duration={2} animateIn="animate__fadeInLeft">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeft">
             <Image
               className="hidden xl:block"
               src={massage2}
@@ -68,13 +68,13 @@ function Blog() {
             />
           </AnimationOnScroll>
           <div className="contentLeft max-w-[36rem] space-y-[2.563rem]">
-            <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
               <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem]">
                 Your Trust is Our Highest Priority
               </h2>
             </AnimationOnScroll>
             <AnimationOnScroll
-              duration={2}
+              animateOnce={true}
               delay={300}
               animateIn="animate__fadeIn"
             >
@@ -89,7 +89,7 @@ function Blog() {
               </p>
             </AnimationOnScroll>
             <AnimationOnScroll
-              duration={2}
+              animateOnce={true}
               delay={300}
               animateIn="animate__fadeInUp"
             >

@@ -14,7 +14,11 @@ function Providers() {
   return (
     <>
       <div className="contentProvider flex justify-center flex-col items-center">
-        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateOnce={true}
+          delay={300}
+          animateIn="animate__fadeIn"
+        >
           <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[10.75rem]">
             Meet your providers
           </h2>
@@ -26,7 +30,7 @@ function Providers() {
       </div>
 
       <div className="containerProvider mt-[3.563rem] max-w-[85.83%] mx-auto flex items-center justify-center gap-[4.875rem] flex-wrap lg:space-y-0 lg:justify-between lg:flex-nowrap">
-        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <div className="card space-y-[0.938rem]">
             <Image
               className="providerPics"
@@ -47,7 +51,11 @@ function Providers() {
             </div>
           </div>
         </AnimationOnScroll>
-        <AnimationOnScroll duration={2} delay={500} animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateOnce={true}
+          delay={500}
+          animateIn="animate__fadeIn"
+        >
           <div className="card space-y-[0.938rem]">
             <Image
               className="providerPics"
@@ -68,7 +76,11 @@ function Providers() {
             </div>
           </div>
         </AnimationOnScroll>
-        <AnimationOnScroll duration={2} delay={800} animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateOnce={true}
+          delay={700}
+          animateIn="animate__fadeIn"
+        >
           <div className="card space-y-[0.938rem]">
             <Image
               className="providerPics"

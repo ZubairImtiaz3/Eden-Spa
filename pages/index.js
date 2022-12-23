@@ -45,28 +45,28 @@ export default function Home() {
         <div className="contentHero pt-[5.625rem] max-w-[85.83%] mx-auto">
           <div className="contentLeft">
             <div className="flex items-center space-x-8">
-              <h1 className="animate__animated animate__fadeInLeft animate__slow font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
+              <h1 className="animate__animated animate__fadeInLeft font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
                 The Perfect
               </h1>
 
-              <div className="animate__animated animate__fadeIn animate__delay-2s lineHero relative -top-4 hidden sm:block"></div>
+              <div className="animate__animated animate__fadeIn animate__delay-1s lineHero relative -top-4 hidden sm:block"></div>
             </div>
             <div className="flex items-center space-x-0 sm:space-x-8 mt-[1rem]">
-              <div className="animate__animated animate__fadeIn animate__delay-3s animate__faster lineHero relative -top-4 hidden sm:block"></div>
-              <h1 className="animate__delay-1s animate__animated animate__fadeInRight animate__slow font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
+              <div className="animate__animated animate__fadeIn animate__delay-1s animate__slow lineHero relative -top-4 hidden sm:block"></div>
+              <h1 className="animate__animated animate__slow animate__fadeInRight font-Domine text-[#2A2A2A] font-medium text-[3.6rem] lg:text-[3.938rem] leading-[4.5rem] lg:leading-[5.313rem]">
                 In-Home Massage
               </h1>
             </div>
 
             <div className="space-y-[3.438rem]">
-              <p className="animate__animated animate__fadeIn animate__slow animate__delay-3s	font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
+              <p className="animate__animated animate__fadeIn animate__delay-1s animate__slower font-Poppins text-[#969696] text-base mt-7 max-w-[35.188rem]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 ipsum quis phasellus tincidunt commodo, mi turpis velit,
                 sollicitudin. Sapien sed petra, vitae sodales in rhoncus ac.
               </p>
               <div>
                 <Link href="Appointment">
-                  <button className="animate__animated animate__fadeInUp animate__slow animate__delay-4s navBtn lg:text-base">
+                  <button className="animate__animated animate__fadeInUp animate__delay-1s navBtn lg:text-base">
                     Make an appointment
                   </button>
                 </Link>
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
           <Image
-            className="heroImg animate__animated animate__fadeIn animate__slow animate__delay-4s relative top-[-28.6rem] left-[40rem] hidden xl:block"
+            className="heroImg animate__animated animate__fadeIn animate__delay-2s animate__fast relative top-[-28.6rem] left-[40rem] hidden xl:block"
             src={heroimg}
             alt="fbLogo"
           />
@@ -93,7 +93,7 @@ export default function Home() {
       </div>
 
       {/* CARDSSECTION */}
-      <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
         <h2
           id="howitworks"
           className="font-Domine font-medium text-[2.5rem] lg:text-[4rem] mt-[6rem] max-w-[85.83%] mx-auto"
@@ -102,7 +102,7 @@ export default function Home() {
         </h2>
       </AnimationOnScroll>
       <div className="containerCard mt-12 flex max-w-[85.83%] mx-auto justify-between items-baseline flex-wrap space-y-12 xl:space-y-0">
-        <AnimationOnScroll duration={1.5} animateIn="animate__fadeInUp">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
           <div className="card">
             <Image className="howItWorkPic" src={cardimg1} alt="Main Logo" />
             <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-6">
@@ -115,8 +115,8 @@ export default function Home() {
           </div>
         </AnimationOnScroll>
         <AnimationOnScroll
-          duration={1.5}
-          delay={500}
+          animateOnce={true}
+          delay={300}
           animateIn="animate__fadeInUp"
         >
           <div className="card">
@@ -131,8 +131,8 @@ export default function Home() {
           </div>
         </AnimationOnScroll>
         <AnimationOnScroll
-          duration={1.5}
-          delay={1000}
+          animateOnce={true}
+          delay={600}
           animateIn="animate__fadeInUp"
         >
           <div className="card">
@@ -165,7 +165,7 @@ export default function Home() {
       <Pricing />
 
       {/* BEFOREFOOTER */}
-      <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
         <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[11.125rem]">
           Lets stay connected
         </h2>
@@ -176,7 +176,11 @@ export default function Home() {
       </AnimationOnScroll>
 
       <div className="form flex items-center justify-center flex-wrap gap-[2.875rem] mt-[3.938rem] mb-[11.25rem]">
-        <AnimationOnScroll duration={2} delay={300} animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateOnce={true}
+          delay={300}
+          animateIn="animate__fadeIn"
+        >
           <form action="">
             <input
               className="emailInput"
@@ -186,7 +190,7 @@ export default function Home() {
           </form>
         </AnimationOnScroll>
         <AnimationOnScroll
-          duration={2}
+          animateOnce={true}
           delay={400}
           animateIn="animate__fadeInRight"
         >

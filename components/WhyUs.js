@@ -14,12 +14,12 @@ function WhyUs() {
   return (
     <>
       <div className="contentWhyUs flex justify-center flex-col items-center">
-        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] text-center mt-[8.125rem]">
             Why choose EDEN SPA
           </h2>
         </AnimationOnScroll>
-        <AnimationOnScroll duration={2} animateIn="animate__fadeInRight">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight">
           <p className="font-Poppins text-[#969696] text-center text-sm lg:text-base max-w-[44.438rem] p-2 md:p-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
             quis phasellus tincidunt commodo.
@@ -28,7 +28,7 @@ function WhyUs() {
       </div>
       <div className="containerWhyUS flex items-center xl:space-x-[6.375rem] justify-center max-w-[85.83%] mx-auto mt-20">
         <AnimationOnScroll
-          duration={2}
+          animateOnce={true}
           delay={300}
           animateIn="animate__fadeInLeft"
         >
@@ -43,8 +43,8 @@ function WhyUs() {
         </AnimationOnScroll>
         <div className="contentRight space-y-10">
           <AnimationOnScroll
-            duration={2}
-            delay={800}
+            animateOnce={true}
+            delay={500}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
@@ -66,8 +66,8 @@ function WhyUs() {
             </div>
           </AnimationOnScroll>
           <AnimationOnScroll
-            duration={2}
-            delay={900}
+            animateOnce={true}
+            delay={600}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">
@@ -89,8 +89,8 @@ function WhyUs() {
             </div>
           </AnimationOnScroll>
           <AnimationOnScroll
-            duration={2}
-            delay={900}
+            animateOnce={true}
+            delay={600}
             animateIn="animate__fadeIn"
           >
             <div className="content flex items-center space-x-[1.938rem]">

@@ -21,7 +21,7 @@ function CarouselMessage() {
   return (
     <>
       <div className="max-w-[85.83%] mx-auto">
-        <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <h2 className="font-Domine text-[#2A2A2A] font-medium text-[2.5rem] sm:text-[4rem] sm:leading-[5.313rem] mt-[10.75rem] max-w-[35.625rem]">
             Book Massage On Demand® Now
           </h2>
@@ -55,7 +55,7 @@ function CarouselMessage() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+              <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
                 <div className="card">
                   <Image src={bookmassage1} alt="Main Logo" />
                   <h3 className="font-Domine font-medium text-[2rem] lg:text-[2.5rem] text-[#2A2A2A] mt-4">
@@ -70,8 +70,8 @@ function CarouselMessage() {
             </SwiperSlide>
             <SwiperSlide>
               <AnimationOnScroll
-                duration={2}
-                delay={500}
+                animateOnce={true}
+                delay={300}
                 animateIn="animate__fadeIn"
               >
                 <div className="card">
@@ -88,8 +88,8 @@ function CarouselMessage() {
             </SwiperSlide>
             <SwiperSlide>
               <AnimationOnScroll
-                duration={2}
-                delay={1000}
+                animateOnce={true}
+                delay={600}
                 animateIn="animate__fadeIn"
               >
                 <div className="card">

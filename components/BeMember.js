@@ -19,12 +19,16 @@ function BeMembers() {
         />
 
         <div className="flex flex-col items-center justify-center gap-[1.875rem] p-2 md:p-0">
-          <AnimationOnScroll duration={2} animateIn="animate__fadeIn">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
             <h2 className="font-Domine text-3xl lg:text-5xl font-medium max-w-[45.25rem] leading-[133%] text-center">
               A Membership Designed for Your Lifestyle
             </h2>
           </AnimationOnScroll>
-          <AnimationOnScroll delay={200} animateIn="animate__fadeInRight">
+          <AnimationOnScroll
+            animateOnce={true}
+            delay={200}
+            animateIn="animate__fadeInRight"
+          >
             <p className="max-w-[35.188rem] text-[#969696] text-sm lg:text-base text-center">
               Zeel Members enjoy a monthly in-home massage at a preferred
               rate—the natural choice for making wellness a central to your
@@ -32,7 +36,7 @@ function BeMembers() {
             </p>
           </AnimationOnScroll>
           <AnimationOnScroll
-            duration={2}
+            animateOnce={true}
             delay={500}
             animateIn="animate__fadeInUp"
           >
